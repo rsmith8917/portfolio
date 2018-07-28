@@ -3,5 +3,23 @@ html
   head
     title= title
     link(rel='stylesheet', href='/stylesheets/style.css')
+    link(rel='stylesheet', href='/stylesheets/bootstrap.min.css')
+    link(rel='javascript', href='bootstrap.bundle.min.js')
+
+    nav.navbar.navbar-expand-lg.navbar-light.bg-light.fixed-top(style='font-family: royalCrescent')
+      .container
+        a.navbar-brand(href='#') ROBERT SMITH
+        button.navbar-toggler(type='button', data-toggle='collapse', data-target='#navbarSupportedContent', aria-controls='navbarSupportedContent', aria-expanded='false', aria-label='Toggle navigation')
+          span.navbar-toggler-icon
+        #navbarSupportedContent.collapse.navbar-collapse
+          ul.navbar-nav.ml-auto
+            li.nav-item.px-3
+              a.nav-link(href='#') about
+            li.nav-item.px-3
+              a.nav-link(href='#') portfolio
+            li.nav-item.px-3
+              a.nav-link(href='#') contact
+
   body
-    block content
+    .container.mt-4
+      block content

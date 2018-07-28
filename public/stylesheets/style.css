@@ -1,3 +1,13 @@
+@font-face {
+  font-family: banksAndMilesSingleLine;
+  src: url(../fonts/Banks&MilesSingleLine.ttf);
+}
+
+@font-face {
+  font-family: royalCrescent;
+  src: url(../fonts/RoyalCrescent.otf);
+}
+
 body {
   padding: 50px;
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
@@ -6,3 +16,4 @@ body {
 a {
   color: #00B7FF;
 }
+
