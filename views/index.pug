@@ -1,10 +1,53 @@
 extends layout
 
 block content
-  .row
-    .mx-auto
-      img(src='images/me.jpg', width='100px')
-  .row
-    .mx-auto
-      | Here's some words about my face
-    
+  main(role='main')
+    section.jumbotron.text-center
+      .container.my-3
+        img(src='images/me.png', width='150px')
+        h1.jumbotron-heading Robert Smith
+        p.lead.text-muted
+          | Full stack developer passionate about designing beautiful and functional user interfaces along with flexible and elegant code.
+    section
+      .container
+        .row
+          .col-md-4
+            .card.mb-4.shadow-sm
+              img.card-img-top(data-src='holder.js/100px225?theme=thumb&bg=55595c&fg=eceeef&text=Thumbnail', alt='Card image cap')
+              .card-body
+                p.card-text
+                  | This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.
+                .d-flex.justify-content-between.align-items-center
+                  .btn-group
+                    button.btn.btn-sm.btn-outline-secondary(type='button') View
+                    button.btn.btn-sm.btn-outline-secondary(type='button') Edit
+                  small.text-muted 9 mins
+          .col-md-4
+            .card.mb-4.shadow-sm
+              img.card-img-top(data-src='holder.js/100px225?theme=thumb&bg=55595c&fg=eceeef&text=Thumbnail', alt='Card image cap')
+              .card-body
+                p.card-text
+                  | This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.
+                .d-flex.justify-content-between.align-items-center
+                  .btn-group
+                    button.btn.btn-sm.btn-outline-secondary(type='button') View
+                    button.btn.btn-sm.btn-outline-secondary(type='button') Edit
+                  small.text-muted 9 mins
+          .col-md-4
+            .card.mb-4.shadow-sm
+              img.card-img-top(data-src='holder.js/100px225?theme=thumb&bg=55595c&fg=eceeef&text=Thumbnail', alt='Card image cap')
+              .card-body
+                p.card-text
+                  | This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.
+                .d-flex.justify-content-between.align-items-center
+                  .btn-group
+                    button.btn.btn-sm.btn-outline-secondary(type='button') View
+                    button.btn.btn-sm.btn-outline-secondary(type='button') Edit
+                  small.text-muted 9 mins
+
+  footer.text-muted.bg-light
+    .container
+      p.float-right
+        a(href='#') Back to top
+      p © Robert Smith, 2018
+  script(src='javascripts/holder.min.js')

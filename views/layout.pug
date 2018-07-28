@@ -6,7 +6,7 @@ html
     link(rel='stylesheet', href='/stylesheets/bootstrap.min.css')
     link(rel='javascript', href='bootstrap.bundle.min.js')
 
-    nav.navbar.navbar-expand-lg.navbar-light.bg-light.fixed-top(style='font-family: royalCrescent')
+    nav.navbar.navbar-expand-lg.navbar-dark.fixed-top(style='font-family: royalCrescent; background-color: #000000')
       .container
         a.navbar-brand(href='#') ROBERT SMITH
         button.navbar-toggler(type='button', data-toggle='collapse', data-target='#navbarSupportedContent', aria-controls='navbarSupportedContent', aria-expanded='false', aria-label='Toggle navigation')
@@ -21,5 +21,4 @@ html
               a.nav-link(href='#') contact
 
   body
-    .container.mt-4
-      block content
+    block content
